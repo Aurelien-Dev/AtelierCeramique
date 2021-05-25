@@ -2,6 +2,9 @@ import express from 'express';
 import homeRouter from './routers/homeRouter';
 import expressHandle from 'express-handlebars';
 import path from 'path';
+require('dotenv').config();
+require('./utils/helpers');
+
 
 export default class Server {
   app = express();
@@ -16,6 +19,10 @@ export default class Server {
     });
 
     this.app.set('views', path.join(__dirname, '/views'));
+
+    //this.app.use(express.static(__dirname + '/dist/public'));
+    this.app.use(express.static(__dirname + '/public'));
+
 
     this.app.engine('handlebars', hbs.engine);
     this.app.set('view engine', 'handlebars');
@@ -34,7 +41,7 @@ export default class Server {
    */
   startServer() {
     this.initEngineMotor();
-    this.initControllers  ();
+    this.initControllers();
 
     this.app.set('port', process.env.PORT || 3001);
 
