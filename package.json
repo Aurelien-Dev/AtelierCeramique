@@ -4,6 +4,7 @@
     "description": "",
     "main": "app.js",
     "scripts": {
+        "postinstall": "tsc",
         "test": "jest --verbose",
         "test-watch": "jest --verbose --watchAll",
         "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon --inspect dist/app.js\"",
