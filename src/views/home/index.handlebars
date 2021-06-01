@@ -1,75 +1,9 @@
 
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">
-                {{!-- <img class="masthead-avatar mb-5" src="assets/img/bol.png" height="30" alt="..." /> --}}
-                Atelier Crémazie
-            </a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#boutique">Boutique</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Masthead-->
-    <header class="masthead text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image-->
-            {{!-- <img class="mb-5" src="assets/img/logo.png" alt="..." /> --}}
-            <!-- Masthead Heading-->
-            {{!-- <h1 class="masthead-heading mb-0">
-                Atelier Crémazie
-            </h1> --}}
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">Céramique - Art de la table - Objets décoratifs</p>
-        </div>
-    </header>
-
-    <!-- Portfolio Section-->
-    <section class="page-section portfolio" id="boutique">
+    <!-- Boutique Section-->
+    <section class="page-section" id="boutique">
         <div class="container">
-            <!-- Portfolio Section Heading-->
+            <!-- Boutique Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Boutique</h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
@@ -77,17 +11,17 @@
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- Portfolio Grid Items-->
+            <!-- Boutique Grid Items-->
             <div class="row justify-content-center" id="productsCollection">
             </div>
         </div>
     </section>
 
-    <!-- About Section-->
-    <section class="page-section bg-primary text-white mb-0" id="about">
+    <!-- emaux & terre Section-->
+    <section class="page-section bg-primary text-white mb-0" id="emauxterre">
         <div class="container">
             <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-white">Émaux & terres</h2>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -97,21 +31,15 @@
             <!-- About Section Content-->
             <div class="row">
                 <div class="col-lg-4 ms-auto">
-                    <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download
-                        includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS
-                        stylesheets for easy customization.</p>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit orci ac magna dapibus, malesuada fringilla est semper. Sed suscipit ut lorem ut dignissim. Nullam dignissim vitae dolor vitae hendrerit. Integer eros arcu, ullamcorper at tristique eu, mattis non odio. Aenean congue ligula non risus placerat porttitor.
+                    </p>
                 </div>
                 <div class="col-lg-4 me-auto">
-                    <p class="lead">You can create your own custom avatar for the masthead, change the icon in the
-                        dividers, and add your email address to the contact form to make it fully functional!</p>
+                    <p class="lead">
+                        Pellentesque ipsum purus, tincidunt a ornare porttitor, gravida sed erat. Aenean et mauris feugiat, porta felis eu, laoreet purus. Nunc ut velit elit. Donec pharetra dui non ipsum eleifend rhoncus. Sed vel laoreet nibh, vitae pellentesque nunc. Sed suscipit posuere diam vel eleifend.
+                    </p>
                 </div>
-            </div>
-            <!-- About Section Button-->
-            <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                    <i class="fas fa-download me-2"></i>
-                    Free Download!
-                </a>
             </div>
         </div>
     </section>
@@ -198,5 +126,5 @@
     </div>
 
     {{#contentFor "pageScripts"}}
-    <script type="text/javascript" src="home.js"></script>
+    <script type="text/javascript" src="js/views/home.js"></script>
     {{/contentFor}}

@@ -1,0 +1,68 @@
+{
+    "product": {
+        "styles": {
+            "product": {
+                "@media (min-width: 601px)": {
+                    "max-width": "calc(33.33333% - 30px)",
+                    "margin-left": "30px",
+                    "margin-bottom": "50px",
+                    "width": "calc(33.33333% - 30px)"
+                },
+                "img": {
+                    "height": "calc(100% - 15px)",
+                    "position": "absolute",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0"
+                },
+                "imgWrapper": {
+                    "padding-top": "calc(75% + 15px)",
+                    "position": "relative",
+                    "height": "0"
+                }
+            },
+            "title": {
+                "font-family": "Montserrat, sans-serif",
+                "font-size": "20px",
+                "color": "#0f3f59"
+            },
+            "button": {
+                "font-family": "Open Sans, sans-serif",
+                "font-weight": "bold",
+                ":hover": {
+                    "background-color": "#17a98c"
+                },
+                "background-color": "#1abc9c",
+                ":focus": {
+                    "background-color": "#17a98c"
+                },
+                "border-radius": "8px",
+                "padding-left": "30px",
+                "padding-right": "30px"
+            },
+            "price": {
+                "font-family": "Montserrat, sans-serif",
+                "color": "#0f3f59"
+            },
+            "compareAt": {
+                "font-family": "Montserrat, sans-serif",
+                "color": "#0f3f59"
+            },
+            "unitPrice": {
+                "font-family": "Montserrat, sans-serif",
+                "color": "#0f3f59"
+            }
+        },
+        "buttonDestination": "modal",
+        "contents": {
+            "options": false
+        },
+        "text": {
+            "button": "Voir le produit"
+        },
+        "googleFonts": [
+            "Montserrat",
+            "Open Sans"
+        ]
+    }
+}
