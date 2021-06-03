@@ -145,6 +145,72 @@ var modalProduct = {
     }
 };
 
+var modalProductBoutiquePhysique = {
+    "contents": {
+        "img": false,
+        "imgWithCarousel": true,
+        "button": false,
+        "buttonWithQuantity": false,
+    },
+    "styles": {
+        "product": {
+            "@media (min-width: 601px)": {
+                "max-width": "100%",
+                "margin-left": "0px",
+                "margin-bottom": "0px"
+            }
+        },
+        "button": {
+            "font-family": "Open Sans, sans-serif",
+            "font-weight": "bold",
+            ":hover": {
+                "background-color": "#17a98c"
+            },
+            "background-color": "#1abc9c",
+            ":focus": {
+                "background-color": "#17a98c"
+            },
+            "border-radius": "8px",
+            "padding-left": "30px",
+            "padding-right": "30px"
+        },
+        "title": {
+            "font-family": "Montserrat, sans-serif",
+            "font-weight": "bold",
+            "font-size": "26px",
+            "color": "#0f3f59"
+        },
+        "price": {
+            "font-family": "Montserrat, sans-serif",
+            "font-weight": "normal",
+            "font-size": "18px",
+            "color": "#0f3f59"
+        },
+        "compareAt": {
+            "font-family": "Montserrat, sans-serif",
+            "font-weight": "normal",
+            "font-size": "15.299999999999999px",
+            "color": "#0f3f59"
+        },
+        "unitPrice": {
+            "font-family": "Montserrat, sans-serif",
+            "font-weight": "normal",
+            "font-size": "15.299999999999999px",
+            "color": "#0f3f59"
+        },
+        "description": {
+            "font-family": "Montserrat, sans-serif"
+        }
+    },
+    "googleFonts": [
+        "Montserrat",
+        "Open Sans"
+    ],
+    "text": {
+        "button": "Ajouter au panier"
+    }
+};
+
 var cart = {
     "styles": {
         "button": {
@@ -281,6 +347,7 @@ window.templates = {
     productTemplate: productTemplate,
     productSet: productSet,
     productModal: modalProduct,
+    modalProductBoutiquePhysique: modalProductBoutiquePhysique,
     cart: cart,
     toggle: toggle,
     lineItem: lineItem
