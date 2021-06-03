@@ -1,24 +1,8 @@
 (function() {
-    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    if (window.ShopifyBuy) {
-        if (window.ShopifyBuy.UI) {
-            ShopifyBuyInit();
-        } else {
-            loadScript();
-        }
-    } else {
-        loadScript();
-    }
-
-    function loadScript() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = scriptURL;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-        script.onload = ShopifyBuyInit;
-    }
+    ShopifyBuyInit();
 
     function ShopifyBuyInit() {
+        $()
         var client = ShopifyBuy.buildClient({
             domain: 'atelier-cremazie.myshopify.com',
             storefrontAccessToken: '63e59cf0a74ad2526c15d44a004894de',
@@ -47,7 +31,7 @@
                 options: {
                     "product": window.templates.productTemplate,
                     "productSet": window.templates.productSet,
-                    "modalProduct": window.templates.productModal,
+                    "modalProduct": window.templates.modalProductBoutiquePhysique,
                     "option": {},
                     "cart": window.templates.cart,
                     "toggle": window.templates.toggle,
@@ -56,4 +40,14 @@
             });
         });
     }
+
+    // call this to Disable
+    function disableScroll() {
+        window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+        window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+        window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+        window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+    }
+
+
 })();
