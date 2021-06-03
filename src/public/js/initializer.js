@@ -83,8 +83,8 @@ var modalProduct = {
     "contents": {
         "img": false,
         "imgWithCarousel": true,
-        "button": true,
-        "buttonWithQuantity": false,
+        "button": false,
+        "buttonWithQuantity": true,
     },
     "styles": {
         "product": {
