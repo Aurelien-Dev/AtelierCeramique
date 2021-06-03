@@ -6,10 +6,10 @@ var productTemplate = {
     "styles": {
         "product": {
             "@media (min-width: 601px)": {
-                "max-width": "calc(33.33333% - 30px)",
-                "margin-left": "30px",
+                "max-width": "calc(25% - 20px)",
+                "margin-left": "20px",
                 "margin-bottom": "50px",
-                "width": "calc(33.33333% - 30px)"
+                "width": "calc(25% - 20px)"
             },
             "img": {
                 "height": "calc(100% - 15px)",
@@ -26,7 +26,7 @@ var productTemplate = {
         },
         "title": {
             "font-family": "Montserrat, sans-serif",
-            "font-size": "20px",
+            "font-size": "18px",
             "color": "#0f3f59"
         },
         "button": {
@@ -73,13 +73,43 @@ var productSet = {
     "styles": {
         "products": {
             "@media (min-width: 601px)": {
-                "margin-left": "-30px"
+                "margin-left": "-20px"
             }
         }
     }
 };
 
 var modalProduct = {
+    events: {
+        'afterInit': function(component) {
+
+            // $(component.node).on('click', '.imgZoom', function() {
+            //     var imageOriginal = $(this).data('original');
+
+            //     console.log();
+            // });
+        },
+    },
+    templates: {
+        imgWithCarousel: `<div class="{{data.classes.product.imgWrapper}}" data-element="product.imageWrapper">
+        <div class="main-image-wrapper">
+          <button type="button" class="carousel-button carousel-button--previous">
+            Left
+            <img class="carousel-button-arrow" src="//sdks.shopifycdn.com/buy-button/latest/arrow.svg" alt="Carousel Arrow"/>
+          </button>
+            <img class="{{data.classes.product.img}} imgZoom" alt="{{data.currentImage.altText}}" src="{{data.currentImage.srcLarge}}" data-element="product.img" data-original="" />
+          <button type="button" class="carousel-button carousel-button--next">
+            Right
+            <img class="carousel-button-arrow" src="//sdks.shopifycdn.com/buy-button/latest/arrow.svg" alt="Carousel Arrow"/>
+          </button>
+        </div>
+        <div class="{{data.classes.product.carousel}}">
+          {{#data.carouselImages}}
+          <a data-element="product.carouselitem" aria-label="{{altText}}" href="{{src}}" class="{{data.classes.product.carouselItem}} {{#isSelected}} {{data.classes.product.carouselItemSelected}} {{/isSelected}}" data-image-id="{{id}}" style="background-image: url({{carouselSrc}})"></a>
+          {{/data.carouselImages}}
+        </div>
+      </div>`,
+    },
     "contents": {
         "img": false,
         "imgWithCarousel": true,
