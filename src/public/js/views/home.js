@@ -39,5 +39,21 @@
                 },
             });
         });
+        ShopifyBuy.UI.onReady(client).then(function(ui) {
+            ui.createComponent('collection', {
+                id: '268722962594',
+                node: document.getElementById('productsCollectionSandrine'),
+                moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+                options: {
+                    "product": window.templates.productTemplate,
+                    "productSet": window.templates.productSet,
+                    "modalProduct": window.templates.productModal,
+                    "option": {},
+                    "cart": window.templates.cart,
+                    "toggle": window.templates.toggle,
+                    "lineItem": window.templates.lineItem
+                },
+            });
+        });
     }
 })();
