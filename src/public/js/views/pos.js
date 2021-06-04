@@ -1,4 +1,5 @@
 (function() {
+
     ShopifyBuyInit();
 
     function ShopifyBuyInit() {
@@ -9,13 +10,13 @@
         });
         ShopifyBuy.UI.onReady(client).then(function(ui) {
             ui.createComponent('collection', {
-                id: '268554961058',
-                node: document.getElementById('productsCollection'),
+                id: '268722962594',
+                node: document.getElementById('productsCollectionSandrine'),
                 moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
                 options: {
                     "product": window.templates.productTemplate,
                     "productSet": window.templates.productSet,
-                    "modalProduct": window.templates.productModal,
+                    "modalProduct": window.templates.modalProductBoutiquePhysique,
                     "option": {},
                     "cart": window.templates.cart,
                     "toggle": window.templates.toggle,
