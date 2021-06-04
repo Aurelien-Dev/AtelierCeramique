@@ -10884,3 +10884,7 @@ html {
     font-family: 'MyWebFont';
     src: url("/fonts/brush.ttf") format("truetype");
 }
+
+.map {
+    margin: 30px;
+}
