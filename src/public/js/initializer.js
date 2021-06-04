@@ -159,23 +159,23 @@ var modalProductCommom = {
     }
 };
 
-var modalProduct = Object.assign(modalProductCommom, {
+var modalProduct = Object.assign({
     "contents": {
         "img": false,
         "imgWithCarousel": true,
         "button": false,
         "buttonWithQuantity": true,
     }
-});
+}, modalProductCommom);
 
-var modalProductBoutiquePhysique = Object.assign(modalProductCommom, {
+var modalProductBoutiquePhysique = Object.assign({
     "contents": {
         "img": false,
         "imgWithCarousel": true,
         "button": false,
         "buttonWithQuantity": false,
     }
-});
+}, modalProductCommom);
 
 var cart = {
     "styles": {
@@ -312,7 +312,7 @@ var lineItem = {
 window.templates = {
     productTemplate: productTemplate,
     productSet: productSet,
-    productModal: modalProduct,
+    modalProduct: modalProduct,
     modalProductBoutiquePhysique: modalProductBoutiquePhysique,
     cart: cart,
     toggle: toggle,

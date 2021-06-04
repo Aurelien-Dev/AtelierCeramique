@@ -15,7 +15,7 @@
                 options: {
                     "product": window.templates.productTemplate,
                     "productSet": window.templates.productSet,
-                    "modalProduct": window.templates.productModal,
+                    "modalProduct": window.templates.modalProduct,
                     "option": {},
                     "cart": window.templates.cart,
                     "toggle": window.templates.toggle,
