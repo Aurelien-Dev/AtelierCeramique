@@ -7,3 +7,7 @@ export function index(req: Request, res: Response, next: NextFunction) {
 export function pos(req: Request, res: Response, next: NextFunction) {
     res.render('home/pos');
 }
+
+export function cgv(req: Request, res: Response, next: NextFunction) {
+    res.render('home/cgv');
+}
