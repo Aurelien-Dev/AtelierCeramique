@@ -20,9 +20,7 @@ export default class Server {
 
     this.app.set('views', path.join(__dirname, '/views'));
 
-    //this.app.use(express.static(__dirname + '/dist/public'));
     this.app.use(express.static(__dirname + '/public'));
-
 
     this.app.engine('handlebars', hbs.engine);
     this.app.set('view engine', 'handlebars');
