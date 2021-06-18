@@ -36,8 +36,6 @@ function initEvent() {
 
     function EnvoyerEmail(datas) {
         emailjs.init("user_hNAJaIJl0ELeIUAnXCFSw");
-
         emailjs.send("service_vhzw3a6", "template_z747a2a", datas);
-        emailjs.send("service_vhzw3a6", "template_l6nqrni", datas);
     }
 }
