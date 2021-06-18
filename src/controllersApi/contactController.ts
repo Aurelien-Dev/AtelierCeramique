@@ -16,6 +16,9 @@ export function addContactMessage(req: Request, res: Response, next: NextFunctio
     var contact = new contactDB();
 
     contact.addContactMessage(req.body, (result) => {
+
+        
+        
         res.status(200).json({ result: result });
     });
 }
