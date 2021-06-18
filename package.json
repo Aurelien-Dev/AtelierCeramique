@@ -4,7 +4,6 @@
     "description": "",
     "main": "app.js",
     "scripts": {
-        "postinstall": "tsc",
         "postinstall": "tsc && mv -i -v src/public dist/ && mv -i -v src/views dist/ && rm -v -rf src",
         "test": "jest --verbose",
         "test-watch": "jest --verbose --watchAll",
@@ -27,6 +26,7 @@
     "dependencies": {
         "@shopify/shopify-api": "^1.2.1",
         "@types/async": "^3.2.6",
+        "@types/dotenv": "^8.2.0",
         "@types/express": "^4.17.11",
         "@types/express-handlebars": "^3.1.0",
         "async": "^3.2.0",
@@ -34,6 +34,8 @@
         "express": "^4.17.1",
         "express-handlebars": "^5.3.0",
         "handlebars": "^4.7.7",
+        "moment": "^2.29.1",
+        "pg": "^8.6.0",
         "shopify-buy": "^2.11.0",
         "ts-node": "^9.1.1"
     }

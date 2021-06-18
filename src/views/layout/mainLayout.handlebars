@@ -46,9 +46,9 @@
                     <li class="nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded" href="point-de-vente#pos">Points de vente</a>
                     </li>
-                    <li class="nav-item mx-0 mx-lg-1">
+                    {{!-- <li class="nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded" href="cgv">Mentions légales et CGV</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#collections">Collections</a>
                     </li>
@@ -174,24 +174,25 @@
             <!-- Contact Section Form-->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-                    <form>
+                    <form action="/api/contact/envoyermessage" method="POST" id="frmContact">
                         <div class="form-floating">
-                            <input class="form-control" id="inputName" type="text" placeholder="Enter your name..." />
+                            <input class="form-control" id="inputName" type="text" placeholder="Entrez votre nom ..."
+                                required>
                             <label for="inputName">Nom / Prénom</label>
                         </div>
                         <div class="form-floating">
                             <input class="form-control" id="inputEmail" type="email"
-                                placeholder="Enter your email..." />
+                                placeholder="Entrez votre email ..." required>
                             <label for="inputEmail">Address email</label>
                         </div>
                         <div class="form-floating">
                             <input class="form-control" id="inputPhone" type="tel"
-                                placeholder="Enter your phone number..." />
+                                placeholder="Entrez votre numéro de téléphone ..." />
                             <label for="inputPhone">Numéro de téléphone</label>
                         </div>
                         <div class="form-floating">
-                            <textarea class="form-control" id="inputMessage" placeholder="Enter your message here..."
-                                style="height: 12rem"></textarea>
+                            <textarea class="form-control" id="inputMessage" placeholder="Entrez votre message ici ..."
+                                style="height: 12rem" required></textarea>
                             <label for="inputMessage">Message</label>
                         </div>
                         <br />
@@ -235,7 +236,7 @@
             <small>Copyright &copy; Atelier Crémazie 2021</small>
             -
             <a href="cgv">
-                <small>Conditions générales de vente</small>
+                <small>Mentions légales et Conditions générales de vente</small>
             </a>
             -
             <a href="tracabilite">
@@ -249,6 +250,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.bootstrap-growl.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
     {{{block "pageScripts"}}}
 
