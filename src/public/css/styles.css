@@ -60,7 +60,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #0F3F59;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -10906,4 +10906,8 @@ html {
 
 .colect-title {
     margin-bottom: 25px;
+}
+
+.container-text {
+    width: 920px;
 }
