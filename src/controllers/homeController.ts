@@ -17,3 +17,9 @@ export function cgv(req: Request, res: Response, next: NextFunction) {
         title_extra: '- Conditions générales de vente'
     });
 }
+
+export function tracabilite(req: Request, res: Response, next: NextFunction) {
+    res.render('home/tracabilite', {
+        title_extra: '- Tracabilité des matières premières'
+    });
+}

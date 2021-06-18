@@ -7,6 +7,7 @@ const homeRouter = Router();
 homeRouter.get('/', homeController.index)
 homeRouter.get('/point-de-vente', homeController.pos)
 homeRouter.get('/cgv', homeController.cgv)
+homeRouter.get('/tracabilite', homeController.tracabilite)
 
 
 export default homeRouter;
