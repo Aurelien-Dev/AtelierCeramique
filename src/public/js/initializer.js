@@ -3,6 +3,9 @@ if (window.templates == null || typeof(window.templates) != "object") {
 }
 
 var productTemplate = {
+    templates: {
+        price: ``,
+    },
     "styles": {
         "product": {
             "@media (min-width: 601px)": {
@@ -81,6 +84,7 @@ var productSet = {
 
 var modalProductCommom = {
     templates: {
+        price: ``,
         imgWithCarousel: `<div class="{{data.classes.product.imgWrapper}}" data-element="product.imageWrapper">
         <div class="main-image-wrapper">
           <button type="button" class="carousel-button carousel-button--previous">
@@ -164,7 +168,7 @@ var modalProduct = Object.assign({
         "img": false,
         "imgWithCarousel": true,
         "button": false,
-        "buttonWithQuantity": true,
+        "buttonWithQuantity": false,
     }
 }, modalProductCommom);
 
