@@ -152,7 +152,7 @@ var modalProductCommom = {
         },
         "description": {
             "font-family": "Montserrat, sans-serif",
-            "font-size": "14px"
+            "font-size": "15px"
         }
     },
     "googleFonts": [
