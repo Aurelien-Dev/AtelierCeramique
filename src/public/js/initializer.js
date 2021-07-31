@@ -36,11 +36,11 @@ var productTemplate = {
             "font-family": "Open Sans, sans-serif",
             "font-weight": "bold",
             ":hover": {
-                "background-color": "#17a98c"
+                "background-color": "#0F3F59"
             },
-            "background-color": "#1abc9c",
+            "background-color": "#145572",
             ":focus": {
-                "background-color": "#17a98c"
+                "background-color": "#145572"
             },
             "border-radius": "8px",
             "padding-left": "30px",
@@ -116,11 +116,11 @@ var modalProductCommom = {
             "font-family": "Open Sans, sans-serif",
             "font-weight": "bold",
             ":hover": {
-                "background-color": "#17a98c"
+                "background-color": "#0F3F59"
             },
-            "background-color": "#1abc9c",
+            "background-color": "#145572",
             ":focus": {
-                "background-color": "#17a98c"
+                "background-color": "#145572"
             },
             "border-radius": "8px",
             "padding-left": "30px",
@@ -188,11 +188,11 @@ var cart = {
             "font-family": "Open Sans, sans-serif",
             "font-weight": "bold",
             ":hover": {
-                "background-color": "#17a98c"
+                "background-color": "#0F3F59"
             },
-            "background-color": "#1abc9c",
+            "background-color": "#145572",
             ":focus": {
-                "background-color": "#17a98c"
+                "background-color": "#145572"
             },
             "border-radius": "8px"
         },
@@ -262,12 +262,12 @@ var toggle = {
         "toggle": {
             "font-family": "Open Sans, sans-serif",
             "font-weight": "bold",
-            "background-color": "#1abc9c",
+            "background-color": "#0F3F59",
             ":hover": {
-                "background-color": "#17a98c"
+                "background-color": "#0F3F59"
             },
             ":focus": {
-                "background-color": "#17a98c"
+                "background-color": "#0F3F59"
             }
         }
     },
