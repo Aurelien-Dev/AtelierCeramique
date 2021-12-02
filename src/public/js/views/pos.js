@@ -1,6 +1,6 @@
 (function() {
 
-    ShopifyBuyInit();
+    //ShopifyBuyInit();
 
     function ShopifyBuyInit() {
         $()

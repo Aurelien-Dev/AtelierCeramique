@@ -13,3 +13,8 @@ Handlebars.registerHelper('contentFor', function(name, options) {
     var block = blocks[name] || (blocks[name] = []);
     block.push(options.fn(this));
 });
+
+//Permet d'insérer des bloques de code dans le layout depuis une view
+Handlebars.registerHelper('short', function(text, length, option) {
+    return text.substring(0, length)
+});

@@ -1,8 +1,17 @@
 import { Request, Response, NextFunction } from 'express';
+import instaService from '../service/InstagramRestorToken'
 
-export function index(req: Request, res: Response, next: NextFunction) {
-    res.render('home/index', {
-        title_extra: '- Boutique'
+export async function index(req: Request, res: Response, next: NextFunction) {
+
+    var service = new instaService()
+    await service.RestorAccessToken();
+
+    service.GetMediaFromInsta((medias) => {
+        res.render('home/index', {
+            title_extra: '- Boutique',
+            medias: medias.data,
+            paging: medias.paging
+        });
     });
 }
 
