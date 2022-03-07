@@ -32,8 +32,17 @@ export default class InstaService {
         db.getInstaToken(async (result) => {
             try {
                 let resp = await axios.get(`https://graph.instagram.com/me/media?fields=id,permalink,caption,media_url&access_token=${result.token}`);
-                resp = resp.data;
-                let instaPhotos = resp//.filter(d => d.media_type === "IMAGE").map(d => d.media_url);
+                let instaPhotos = resp.data//.filter(d => d.media_type === "IMAGE").map(d => d.media_url);
+
+                for (let i = 0; i < instaPhotos.data.length; i++) {
+                    const element = instaPhotos.data[i];
+                    if (element.media_url.includes('mp4')) {
+                        element.html = '<video height="292" controls><source src="' + element.media_url + '" type="video/mp4">Your browser does not support the video tag.</video>';
+                    } else {
+                        element.html = '<img src="' + element.media_url + '" class="gallery-image" alt="">';
+                    }
+                }
+
                 callback(instaPhotos)
             } catch (error) {
                 console.log(error)
