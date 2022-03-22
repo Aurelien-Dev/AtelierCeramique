@@ -37,9 +37,11 @@ export default class InstaService {
                 for (let i = 0; i < instaPhotos.data.length; i++) {
                     const element = instaPhotos.data[i];
                     if (element.media_url.includes('mp4')) {
-                        element.html = '<video height="292" controls><source src="' + element.media_url + '" type="video/mp4">Your browser does not support the video tag.</video>';
+                        element.html = '<video height="295" controls><source src="' + element.media_url + '" type="video/mp4">Your browser does not support the video tag.</video>';
+                        element.isVideo = true
                     } else {
                         element.html = '<img src="' + element.media_url + '" class="gallery-image" alt="">';
+                        element.isVideo = false
                     }
                 }
 

@@ -16,15 +16,17 @@
                 {{#each medias}}
                 <div class="gallery-item" tabindex="0">
                     {{{this.html}}}
-                    <a href="{{this.permalink}}" target="_blank" style="color: white;">
-                        <div class="gallery-item-info">
-                            <ul>
-                                <li class="gallery-item-likes">
-                                    {{{short this.caption 125}}} ... <br><br>lire la suite
-                                </li>
-                            </ul>
-                        </div>
-                    </a>
+                    {{#unless this.isVideo}}
+                        <a href="{{this.permalink}}" target="_blank" style="color: white;">
+                            <div class="gallery-item-info">
+                                <ul>
+                                    <li class="gallery-item-likes">
+                                        {{{short this.caption 125}}} ... <br><br>lire la suite
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    {{#unless}}
                 </div>
                 {{/each}}
             </div>
