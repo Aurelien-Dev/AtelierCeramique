@@ -4,12 +4,12 @@ export default class DbContext {
     pool = new Pool({
         user: process.env.PG_USER,
         host: process.env.PG_HOST,
-        database: process.env.PG_DATABASE,
+        database: 'AtelierCremazie',
         password: process.env.PG_PASSWD,
         port: process.env.PG_PORT,
-        ssl: {
-            rejectUnauthorized: (process.env.PG_SSL === 'true' ? true : false)
-        }
+        // ssl: {
+        //     rejectUnauthorized: (process.env.PG_SSL === 'true' ? true : false)
+        // }
     });
 
     query(text, params, callback) {
