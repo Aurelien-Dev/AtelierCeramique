@@ -54,7 +54,7 @@ export default class Server {
     this.initEngineMotor();
     this.initControllers();
 
-    this.app.set('port', process.env.PORT || 3001);
+    this.app.set('port', process.env.PORT || 81);
 
     this.app.listen(this.app.get('port'), () => {
       console.log(
